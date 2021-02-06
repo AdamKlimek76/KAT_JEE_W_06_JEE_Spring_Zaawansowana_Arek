@@ -30,5 +30,9 @@ public class Interfaces {
 		Shape rectangle = new Rectangle(5);
 		System.out.println(rectangle.size());
 		System.out.println(rectangle.circuit());
+
+		BookRepository memoryBookRepository = new MemoryBookRepository();
+		memoryBookRepository.getAllBooks();
+		memoryBookRepository.getBooksByName("Potop");
 	}
 }

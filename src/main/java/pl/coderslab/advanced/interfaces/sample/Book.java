@@ -4,6 +4,7 @@ package pl.coderslab.advanced.interfaces.sample;
 public class Book implements Identifiable, Sizable {
 	private final Long id;
 	private final int size;
+	private String name = "untitled";
 
 	public Book(Long id, int size) {
 		this.id = id;
@@ -18,5 +19,9 @@ public class Book implements Identifiable, Sizable {
 	@Override
 	public int size() {
 		return this.size;
+	}
+
+	public String getName() {
+		return name;
 	}
 }
